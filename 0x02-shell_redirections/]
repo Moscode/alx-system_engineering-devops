@@ -1,2 +1,0 @@
-#!/bin/bash
-ls -Art | tail -7 1
