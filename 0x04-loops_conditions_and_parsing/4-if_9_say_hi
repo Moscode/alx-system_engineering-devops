@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# output Best School 10 times for on the 9th time output Hi on newline
+counter=1
+while [ $counter -le 10 ]
+do
+	echo "Best School";
+	if [ $counter -eq 9 ]
+	then
+		echo "Hi"
+	fi
+	_=$((counter++))
+done
