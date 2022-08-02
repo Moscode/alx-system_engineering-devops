@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# output 0 - 12 hours with all minutes in between
+hr=0
+while [ $hr -lt 13 ]
+do
+	echo "Hour: $hr"
+	min=0
+	while [ $min -le 59 ]
+	do
+		echo $min
+		((min++))
+	done
+	((hr++))
+done
