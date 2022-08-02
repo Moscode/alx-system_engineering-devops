@@ -7,7 +7,7 @@ do
 	min=0
 	while [ $min -le 59 ]
 	do
-		echo $min
+		echo "$min"
 		((min++))
 	done
 	((hr++))
