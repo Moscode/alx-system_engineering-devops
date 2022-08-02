@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# output list in dir skipping the first section of the name before dash
+LIST="$(ls ./)"
+for i in $LIST; do
+	NEWNAME=$(echo "$i" | cut -d'-' -f2)
+	echo "$NEWNAME"
+done
