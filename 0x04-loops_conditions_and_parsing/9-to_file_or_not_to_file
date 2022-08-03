@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# check if file exit
+# check if it's empty
+# check if it regular file
+LIST=$(ls ./)
+for i in "$LiST"
+do
+	if [ $i == "school" ]
+	then
+		echo "school file exits"
+		if [[ wc $i -gt 0 ]]
+		then
+			echo "school file is not empty"
+			echo "school is a regular file"
+		elif [ wc $i -eq 0 ]
+		then
+			echo "shool file is empty"
+			echo "school is a regular file"
+		else
+			echo "school is not empty"
+	else
+		echo "school file does not exit"
+done
